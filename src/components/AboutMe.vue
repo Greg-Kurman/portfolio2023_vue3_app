@@ -1,34 +1,35 @@
 <template>
-  <div class="main">
-    <div class="header">
+  <main class="main">
+    <header class="header">
       <div class="logo">
         <img src="../assets/logo.png" alt="">
       </div>
       <nav class="head_nav">
-        <div class="icons"><img src="../assets/git.png" alt=""> <img src="../assets/vk.png" alt=""></div>
+        <div class="icons"> <img src="../assets/git.png" alt=""> <img src="../assets/vk.png" alt=""></div>
         <div class="btn"><img src="../assets/btn.png" alt="">
           <p>button</p> <img class="btn_el1" src="../assets/btn_el1.png" alt=""> <img class="btn_el2"
             src="../assets/btn_el1.png" alt="">
         </div>
       </nav>
-    </div>
+    </header>
     <div class="main_body">
       <div class="body_nav">
         <nav class="nav_text">
           <a href="">Home</a> <img src="../assets/star.png" alt=""> <a href="">Factions</a><img src="../assets/star.png"
             alt=""> <a href="">Roadmap</a>
         </nav>
-        <div >
+        <article class="main_wrapp">
           <h1 class="main_text">FROM DUSK TO DOWN </h1>
-          <div class="btn"><img  src="../assets/btn.png" alt="">
-          <p>button</p> <img class="btn_el1" src="../assets/btn_el1.png" alt=""> <img class="btn_el2"
-            src="../assets/btn_el1.png" alt="">
-        </div> 
-        </div>
-         
+          <div class="btn2">
+            <div class="btn btn2"><img src="../assets/btn.png" alt="">
+              <p>button</p> <img class="btn_el1" src="../assets/btn_el1.png" alt=""> <img class="btn_el2"
+                src="../assets/btn_el1.png" alt="">
+            </div>
+          </div>
+        </article>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -46,13 +47,12 @@ a {
   color: rgb(255, 255, 255);
 }
 
-a:hover{
+a:hover {
   border-radius: 5%;
   background-color: rgba(194, 117, 218, 0.5)
-  
 }
 
-.head_nav{
+.head_nav {
   cursor: pointer;
 }
 
@@ -64,13 +64,15 @@ a:hover{
   font-size: 20px;
   font-family: 'Orbitron', sans-serif;
   font-style: normal;
+  height: 300px;
+  width: 70%;
 }
 
 .nav_text {
   writing-mode: vertical-rl;
   display: flex;
   justify-content: space-around;
-  margin: 0 0 0 50px;
+  align-content: flex-start;
   height: 500px;
 }
 
@@ -79,6 +81,10 @@ a:hover{
   position: relative;
   width: 190px;
   height: 50px;
+}
+
+.btn2{
+  margin: 0 0 0 50%;
 }
 
 .btn:hover {
@@ -122,7 +128,7 @@ a:hover{
 }
 
 .head_nav {
-  min-width: 20%;
+  min-width: 350px;
   display: flex;
   justify-content: space-between;
   max-height: 100px;
@@ -135,13 +141,14 @@ a:hover{
 }
 
 .main_text {
-  margin: 250px auto 0px;
+  margin: 250px 0 0 0;
   color: white;
   font-family: 'Orbitron', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   letter-spacing: 0.365em;
+  justify-self: flex-start;
 }
 
 .main {
