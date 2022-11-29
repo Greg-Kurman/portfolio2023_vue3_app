@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Octosquares';
+    src: local('TT Octosquares Regular'), local('TT-Octosquares-Regular'),
+        url('TTOctosquares-Regular.woff2') format('woff2'),
+        url('TTOctosquares-Regular.woff') format('woff'),
+        url('TTOctosquares-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
